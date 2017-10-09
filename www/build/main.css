@@ -25296,7 +25296,7 @@ page-cart .button-ios {
   /* height: 2.8em; */
   /* font-size: 1.6rem; */
   color: #fff;
-  background-color: #5c926e;
+  background-color: #1ab394;
   margin: 0.4rem 0.2rem;
   /* padding: 0 1em; */
 }
@@ -25305,7 +25305,7 @@ page-cart .button[icon-only] {
   padding: 0;
   min-width: .9em;
   border-radius: 100%;
-  background-color: #5c926e;
+  background-color: #1ab394;
 }
 
 page-checkout #segmentPayment {
@@ -25315,10 +25315,10 @@ page-checkout #segmentPayment {
 }
 
 page-checkout .segment-md-light .segment-button.activated, page-checkout .segment-md-light .segment-button.segment-activated {
-  border-color: #5c926e;
+  border-color: #1ab394;
   color: #fff;
   opacity: 1;
-  background-color: #5c926e;
+  background-color: #1ab394;
   padding: 0px;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
@@ -25587,7 +25587,7 @@ page-home .p-price-40 {
 page-home .highLight {
   margin-top: 24px !important;
   font-size: 2rem !important;
-  background-color: #558866 !important;
+  background-color: #1ab394 !important;
   color: #fff !important;
   margin-bottom: 22px !important;
   widows: 100% !important;
