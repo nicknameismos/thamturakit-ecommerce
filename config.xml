@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.cnet.thamturakit" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>G-Vintage</name>
+    <name>ธรรมธุรกิจ</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
@@ -9,7 +9,7 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />tatdsadasdasnmabfjabfadsadsadasdasdasda55455dfdafsdjlnlfasdbglkhassafsafdsf
+    <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="webviewbounce" value="false" />
@@ -85,8 +85,8 @@
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <engine name="android" spec="~6.2.3" />
     <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
-        <variable name="APP_ID" value="2017142665188943" />
-        <variable name="APP_NAME" value="G-Vintage" />
+        <variable name="APP_ID" value="414384685598077" />
+        <variable name="APP_NAME" value="ธรรมธุรกิจ" />
     </plugin>
     <plugin name="onesignal-cordova-plugin" spec="^2.2.1" />
 </widget>
