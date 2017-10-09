@@ -1,0 +1,214 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"android-package\" value=\"org.apache.cordova.facebook.ConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://m.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://graph.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://api.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"android-minSdkVersion\" value=\"15\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"OneSignalPush\"><param name=\"android-package\" value=\"com.plugin.gcm.OneSignalPush\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/facebookconnect.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<string name=\"fb_app_id\">2017142665188943</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"fb_app_name\">G-Vintage</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "application": [
+                        {
+                            "xml": "<meta-data android:name=\"com.facebook.sdk.ApplicationId\" android:value=\"@string/fb_app_id\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"com.facebook.sdk.ApplicationName\" android:value=\"@string/fb_app_name\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|screenLayout|screenSize|orientation\" android:label=\"@string/fb_app_name\" android:name=\"com.facebook.FacebookActivity\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"com.amazon.device.messaging.permission.RECEIVE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<permission android:name=\"com.cnet.thamturakit.permission.RECEIVE_ADM_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.cnet.thamturakit.permission.RECEIVE_ADM_MESSAGE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<amazon:enable-feature android:name=\"com.amazon.device.messaging\" android:required=\"false\" xmlns:amazon=\"http://schemas.amazon.com/apk/res/android\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:exported=\"false\" android:name=\"com.onesignal.ADMMessageHandler\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.cnet.thamturakit\" /></intent-filter></receiver>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "2017142665188943",
+            "APP_NAME": "G-Vintage",
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-device.device",
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+            "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+            "pluginId": "cordova-plugin-facebook4",
+            "clobbers": [
+                "facebookConnectPlugin"
+            ]
+        },
+        {
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "pluginId": "cordova-plugin-splashscreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "id": "cordova-plugin-statusbar.statusbar",
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "pluginId": "cordova-plugin-statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
+        },
+        {
+            "id": "ionic-plugin-keyboard.keyboard",
+            "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+            "pluginId": "ionic-plugin-keyboard",
+            "clobbers": [
+                "cordova.plugins.Keyboard"
+            ],
+            "runs": true
+        },
+        {
+            "id": "onesignal-cordova-plugin.OneSignal",
+            "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+            "pluginId": "onesignal-cordova-plugin",
+            "clobbers": [
+                "OneSignal"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-device": "1.1.4",
+        "cordova-plugin-facebook4": "1.9.1",
+        "cordova-plugin-splashscreen": "4.0.3",
+        "cordova-plugin-statusbar": "2.2.2",
+        "cordova-plugin-whitelist": "1.3.1",
+        "ionic-plugin-keyboard": "2.2.1",
+        "onesignal-cordova-plugin": "2.2.1"
+    }
+}
