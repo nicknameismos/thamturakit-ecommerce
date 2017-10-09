@@ -1,0 +1,35 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "2017142665188943",
+            "APP_NAME": "G-Vintage",
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "com.cnet.thamturakit"
+        }
+    },
+    "dependent_plugins": {}
+}
