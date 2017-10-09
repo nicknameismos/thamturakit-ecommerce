@@ -1,0 +1,43 @@
+page-search {
+
+    h2{
+        white-space: nowrap; 
+        width: 12em; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    
+        color: #7f3f00
+         }
+
+         .item-ios p {
+            overflow: inherit;
+            font-size: 1.4rem;
+            line-height: normal;
+            text-overflow: inherit;
+            color: #d8625d;
+            margin: 0 0 2px;
+          }
+
+         
+         .item-md p {
+            margin: 0 0 2px;
+            overflow: inherit;
+            font-size: 1.4rem;
+            line-height: normal;
+            text-overflow: inherit;
+            color: #ff0000;
+          }     
+        
+         ul {
+            padding: 0px;
+            margin-top:0px;
+            &.rating li {
+                padding: 0px 0px !important;
+                background: none;
+                color: #ffb400;
+                ion-icon {
+                    font-size: 20px;
+                }
+            }
+        }
+}

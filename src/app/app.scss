@@ -1,0 +1,73 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+// @font-face {
+//     font-family: 'icomoon-green-vintage';
+//     src: url('../assets/fonts/icomoon-green-vintage.eot?s9oj7a');
+//     src: url('../assets/fonts/icomoon-green-vintage.eot?s9oj7a#iefix') format('embedded-opentype'), url('../assets/fonts/icomoon-green-vintage.ttf?s9oj7a') format('truetype'), url('../assets/fonts/icomoon-green-vintage.woff?s9oj7a') format('woff'), url('../assets/fonts/icomoon-green-vintage.svg?s9oj7a#icomoon-green-vintage') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// [class="green-vintage-logo"] {
+//     /* use !important to prevent issues with browser extensions that change fonts */
+//     font-family: 'icomoon-green-vintage' !important;
+//     speak: none;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+//     font-size: 70px;
+//     color: white;
+//     /* Better Font Rendering =========== */
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+// .green-vintage-logo:before {
+//     content: "\e900";
+// }
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/fonts/icomoon-green-vintage.eot?xdgxqz');
+    src: url('../assets/fonts/icomoon-green-vintage.eot?xdgxqz#iefix') format('embedded-opentype'), url('../assets/fonts/icomoon-green-vintage.ttf?xdgxqz') format('truetype'), url('../assets/fonts/icomoon-green-vintage.woff?xdgxqz') format('woff'), url('../assets/fonts/icomoon-green-vintage.svg?xdgxqz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-green-"],
+[class*=" icon-green-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: white;
+    font-size: 80px;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-green-logo:before {
+    content: "\e901";
+    color: #426135;
+    font-size: 50px
+}
+
+.icon-green-text:before {
+    content: "\e900";
+}

@@ -1,0 +1,126 @@
+page-product-detail {
+  .progress-box {
+    color: red !important;
+    border-spacing: 1px;
+    .progress-bar {
+        background-color: silver;
+        height: 15px;
+        width: 90%;
+        padding-top: 0.1px;
+        padding-bottom: 0.1px;
+        // padding-left: 0.1px;
+        // padding-right: 0.1px; 
+        margin-top: 7px; 
+        border-radius: 2px;
+        span {
+            text-align: center;
+            display: inline-block;
+            height: 100%;
+            border-radius: 2px;
+            background-color: #ffb400;
+            transition: width .4s ease-in-out;
+        }
+    }
+    p {
+        ion-row {
+            height: 15px;
+        }
+    }
+}
+
+    ul {
+        padding: 0px;
+        margin-top:0px;
+        &.rating li {
+            padding: 0px 0px !important;
+            background: none;
+            color: #ffb400;
+            ion-icon {
+                font-size: 20px;
+            }
+        }
+    }
+    .item-ios ion-icon[item-left],
+    .item-ios ion-icon[item-right],
+    .item-ios ion-icon[item-start],
+    .item-ios ion-icon[item-end] {
+      margin-left: 0;
+      margin-top: 9px;
+      margin-bottom: 8px;
+      color: #f53d3d;
+    }
+    
+    
+
+    p{
+        color: #000;
+        font-size: 16px;
+        
+    }
+    .item-divider-ios {
+        padding-left: 16px;
+        color: #222;
+        background-color: #fff;
+      }
+      
+
+    .slide-zoom {
+        text-align: center;
+        display: block;
+        width: auto;
+        height: 320px;
+    }
+
+    .slide_img{
+      height: 320px;
+  }
+
+  .swiper-slide img {
+      width: 360px;
+      max-width: 100%;
+      height: 300px;
+      max-height: 100%;
+
+    }
+
+    ion-slides {
+      display: block;
+      width: 100%;
+      
+      height: 337px;
+    }
+  
+  #colShop {
+    background-color: #f1ebeb;   
+  }
+
+  #colShipping {
+    background-color: #f1ebeb;   
+  }
+
+  .swiper-slide {
+    text-align: center;
+    position: relative;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-flex-shrink: 0; */
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    /* -webkit-align-items: center; */
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    /* -webkit-justify-content: center; */
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+    font-size: 18px;
+   
+    box-sizing: border-box;
+    // width: 378px !important;
+    height: 336px !important;
+  }
+}

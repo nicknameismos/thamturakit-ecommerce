@@ -1,0 +1,85 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-icon-searchbar></ion-icon-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <!-- segment -->
+  <div no-padding>
+    <ion-segment mode="md" [(ngModel)]="pages">
+      <ion-segment-button *ngFor="let segment of homeData.categories; let i = index;" [ngClass]="{'active-page' : i == pages}"
+        (click)="onSelectedPage(i)">
+        {{ segment.name }}
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <!-- segment display -->
+  <div>
+    <div *ngFor="let segment of homeData.categories; let i = index;" [hidden]="i != pages">
+
+      <ion-grid>
+
+        <ion-row no-padding>
+          <ion-col col-12>
+            <img class="font-jjgreen" src="./assets/image/WDS2.jpg">
+            <ion-row no-padding>
+              <ion-col col-12 text-center>
+                <span class="icon-green-text"></span>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="segment.popularproducts  && segment.popularproducts.length > 0">
+          <ion-col col-12 class="highLight" text-center>
+            <h4>Popular Products</h4>
+          </ion-col>
+          <ion-col col-12 class="grid-product">
+            <ion-list-grid [items]="segment.popularproducts"></ion-list-grid>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="segment.bestseller && segment.bestseller.length > 0" id="rowBest">
+          <ion-col col-12 class="highLight" text-center>
+            <h4>Best Seller</h4>
+          </ion-col>
+          <ion-col col-12 class="grid-product">
+            <ion-list-grid [items]="segment.bestseller"></ion-list-grid>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="segment.popularshops && segment.popularshops.length > 0" id="rowBest">
+          <ion-col col-12 class="highLight" text-center>
+            <h4>Popular Shops</h4>
+          </ion-col>
+          <ion-col col-12 class="grid-product">
+            <ion-list-grid [items]="segment.popularshops"></ion-list-grid>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="lastVisit && lastVisit.length > 0" id="rowBest">
+          <ion-col col-12 class="highLight" text-center>
+            <h4>Last Visit</h4>
+          </ion-col>
+          <ion-col col-12 class="grid-product">
+            <ion-list-grid [items]="lastVisit"></ion-list-grid>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,46 @@
+{
+    "_id": "cart1",
+    "items": [
+        {
+            "_id": "product1",
+            "product": {
+                "_id": "pro0001",
+                "name": "pro1",
+                "detail": "pro1 detail",
+                "price": 100,
+                "promotionprice": null, //calculate from active promotions
+                "percentofdiscount": null, //calculate from active promotions
+                "currency": "THB",
+                "images": [
+                    "https://www.beartai.com/wp-content/uploads/2017/06/Galaxy-S8-540x540.jpg"
+                ]
+            },
+            "qty": 1,
+            "amount": 100,
+            "discount": null,
+            "totalamount": 100
+        },
+        {
+            "_id": "product2",
+            "product": {
+                "_id": "pro0002",
+                "name": "pro2",
+                "detail": "pro2 detail",
+                "price": 200,
+                "promotionprice": 180, //calculate from active promotions
+                "percentofdiscount": 10, //calculate from active promotions
+                "currency": "THB",
+                "images": [
+                    "http://www.three.co.uk/cs/Satellite?blobkey=id&blobwhere=1400877649618&blobcol=urldata&blobtable=MungoBlobs"
+                ]
+            },
+            "qty": 1,
+            "amount": 200,
+            "discount": 20,
+            "totalamount": 180
+        }
+    ],
+    "amount": 120,
+    "discount": 20,
+    "totalamount": 100
+}

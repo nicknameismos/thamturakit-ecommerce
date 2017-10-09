@@ -1,0 +1,35 @@
+page-tabnav {
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+        color: rgb(252, 246, 246);
+    }
+    .tabs-ios .tabbar {
+        background: #5c926e;
+    }
+    .tabs-ios .tab-button[aria-selected=true] {
+        background-color: #d8625d;
+        color: #f4f4f4;
+    }
+    .tabs-ios .tab-button-icon {
+        color: #f4f4f4;
+    }
+    .tabs-ios .tab-button {
+        color: #f4f4f4;
+    }
+    /////////////////////////////////////////////////
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+        color: rgb(252, 246, 246);
+    }
+    .tabs-md .tabbar {
+        background: #5c926e;
+    }
+    .tabs-md .tab-button[aria-selected=true] {
+        background-color: #d8625d;
+        color: #f4f4f4;
+    }
+    .tabs-md .tab-button-icon {
+        color: #f4f4f4;
+    }
+    .tabs-md .tab-button {
+        color: #f4f4f4;
+    }
+}
