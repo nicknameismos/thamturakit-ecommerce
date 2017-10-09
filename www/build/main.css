@@ -25531,7 +25531,7 @@ page-home .item-md {
   position: relative;
   font-size: 1.7rem;
   color: #000;
-  background-color: #fff0d1;
+  background-color: #f7fadf;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
@@ -25541,7 +25541,7 @@ page-home .toolbar .searchbar-ios .searchbar-input {
 }
 
 page-home .toolbar .searchbar-md .searchbar-input {
-  background: #d8625d;
+  background: #eef5e5;
 }
 
 page-home p {
@@ -25633,7 +25633,7 @@ page-home .grid-product {
 
 page-home .segment-button.active-page {
   color: #ffffff !important;
-  background-color: #558866  !important;
+  background-color: #1AB394  !important;
   border-bottom: 4px solid !important;
 }
 
@@ -25641,7 +25641,7 @@ page-home ion-segment {
   display: block;
   overflow-x: scroll !important;
   white-space: nowrap !important;
-  background-color: #558866  !important;
+  background-color: #1AB394  !important;
 }
 
 page-home ion-segment ion-segment-button.segment-button {
@@ -25855,7 +25855,7 @@ page-tabnav .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
 }
 
 page-tabnav .tabs-ios .tabbar {
-  background: #5c926e;
+  background: #1AB394;
 }
 
 page-tabnav .tabs-ios .tab-button[aria-selected=true] {
@@ -25876,11 +25876,11 @@ page-tabnav .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
 }
 
 page-tabnav .tabs-md .tabbar {
-  background: #5c926e;
+  background: #1AB394;
 }
 
 page-tabnav .tabs-md .tab-button[aria-selected=true] {
-  background-color: #d8625d;
+  background-color: #ad7e6d;
   color: #f4f4f4;
 }
 

@@ -20,7 +20,7 @@ page-home {
         position: relative;
         font-size: 1.7rem;
         color: #000;
-        background-color: #fff0d1;
+        background-color: #f7fadf;
         -webkit-transition: background-color 200ms linear;
         transition: background-color 200ms linear;
     }
@@ -28,7 +28,7 @@ page-home {
         background: #d8625d;
     }
     .toolbar .searchbar-md .searchbar-input {
-        background: #d8625d;
+        background: #eef5e5;
     }
     p {
         white-space: nowrap;
@@ -108,14 +108,14 @@ page-home {
     /* segment*/
     .segment-button.active-page {
         color: #ffffff !important;
-        background-color: #558866  !important;
+        background-color: #1AB394  !important;
         border-bottom: 4px solid !important;
     }
     ion-segment {
         display: block;
         overflow-x: scroll !important;
         white-space: nowrap !important;        
-        background-color: #558866  !important;
+        background-color: #1AB394  !important;
         ion-segment-button.segment-button {
             display: inline-block !important;
             min-width: 100px !important;
