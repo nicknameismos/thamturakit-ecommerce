@@ -39,13 +39,13 @@ export class CheckoutPage {
     }
   ];
   currentstep: number = 1;
-  constructor(public navCtrl: NavController, 
-    public navParams: NavParams, 
-    public modalCtrl: ModalController, 
-    public cartService: CartService, 
-    public addressService: AddressService, 
-    public paymentService: PaymentService, 
-    public orderService: OrderService, 
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    public modalCtrl: ModalController,
+    public cartService: CartService,
+    public addressService: AddressService,
+    public paymentService: PaymentService,
+    public orderService: OrderService,
     public app: App,
     public loadingCtrl: LoadingController) {
     this.getShippingData();
@@ -60,25 +60,17 @@ export class CheckoutPage {
   getShippingData() {
     let loading = this.loadingCtrl.create();
     loading.present();
-    let user = JSON.parse(window.localStorage.getItem('jjuser'));
-    this.cartService.getCartByUser(user._id).then((data) => {
-      console.log(data);
-      this.shipping = data;
-      loading.dismiss();      
-      // console.log(this.shipping);
-    }, (error) => {
-      loading.dismiss();
-      console.error(error);
-    });
+    this.shipping = this.cartService.getCartStorage();
+    loading.dismiss();
   }
   getAddressData() {
     let loading = this.loadingCtrl.create();
     loading.present();
     this.addressService.getAddressByUser().then((data) => {
       this.address = data;
-      loading.dismiss(); 
+      loading.dismiss();
     }, (error) => {
-      loading.dismiss(); 
+      loading.dismiss();
       console.error(error);
     });
   }
@@ -89,9 +81,9 @@ export class CheckoutPage {
     this.paymentService.getPaymentList().then((data) => {
       this.payment = data[0];
       console.log(this.payment);
-      loading.dismiss(); 
+      loading.dismiss();
     }, (err) => {
-      loading.dismiss(); 
+      loading.dismiss();
       console.error(err);
     });
   }
@@ -127,10 +119,10 @@ export class CheckoutPage {
       let loading = this.loadingCtrl.create();
       loading.present();
       this.addressService.createAddress(data).then(resp => {
-        loading.dismiss(); 
+        loading.dismiss();
         this.getAddressData();
-      },err=>{
-        loading.dismiss(); 
+      }, err => {
+        loading.dismiss();
       })
       console.log(data);
 
