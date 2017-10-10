@@ -1,5 +1,6 @@
+import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, App } from 'ionic-angular';
 import { CorService, UserModel, AuthenService } from "@ngcommerce/core";
 import { NotificationPage } from '../notification/notification';
 /**
@@ -16,7 +17,7 @@ import { NotificationPage } from '../notification/notification';
 })
 export class ProfilePage {
   userProfile = {} as UserModel;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public authenService: AuthenService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public authenService: AuthenService, public app: App) {
     this.userProfile = JSON.parse(window.localStorage.getItem('jjuser'));
   }
 
@@ -31,6 +32,10 @@ export class ProfilePage {
 
   notification(e){
     this.navCtrl.push(NotificationPage);
+  }
+
+  loginModal(e) {
+    this.app.getRootNav().setRoot(LoginPage);
   }
 
 }
