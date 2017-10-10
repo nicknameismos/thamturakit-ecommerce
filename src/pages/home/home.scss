@@ -66,11 +66,11 @@ page-home {
         text-align: center;
     }
     .highLight {
-        margin-top: 24px !important;
+        // margin-top: 24px !important;
         font-size: 2rem !important;
         background-color: #1ab394 !important;
         color: #fff !important;
-        margin-bottom: 22px !important;
+        // margin-bottom: 22px !important;
         widows: 100% !important;
         z-index: 9999 !important;
         height: 38px;
@@ -79,6 +79,7 @@ page-home {
 
     h4{
         margin-top: 1rem !important;
+        font-size: 1.8rem;
     }
     .grid {
         padding: 0px;
@@ -110,12 +111,15 @@ page-home {
         color: #ffffff !important;
         background-color: #1AB394  !important;
         border-bottom: 4px solid !important;
+        font-weight: 600;
+        font-size: 0.9em;
     }
     ion-segment {
         display: block;
         overflow-x: scroll !important;
         white-space: nowrap !important;        
         background-color: #1AB394  !important;
+        width: inherit;
         ion-segment-button.segment-button {
             display: inline-block !important;
             min-width: 100px !important;
@@ -132,4 +136,39 @@ page-home {
     #rowBest{
         margin-top: -17px;
     }
+
+    .item-md.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: 0px solid #dedede;
+      }
+
+      img {
+        max-width: 100%;
+        border: 0;
+        width: inherit;
+      }
+
+      .segment-md .segment-button {
+        -webkit-box-flex: 1;
+        /* -webkit-flex: 1; */
+        -ms-flex: 1;
+        flex: 1;
+        /* width: 0; */
+        height: 4.2rem;
+        /* border-bottom-width: 2px; */
+        /* border-bottom-style: solid; */
+        /* border-bottom-color: rgba(0, 0, 0, 0.1); */
+        /* font-size: 1.2rem; */
+        /* font-weight: 500; */
+        line-height: 4rem;
+        text-transform: uppercase;
+        /* color: #488aff; */
+        /* background-color: transparent; */
+        opacity: 0.9;
+        /* -webkit-transition: 100ms all linear; */
+        transition: 100ms all linear;
+        padding: 0 6px;
+        /* color: #fff; */
+      }
+      
 }
